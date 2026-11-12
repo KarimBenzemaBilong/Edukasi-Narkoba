@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website edukasi pencegahan penyalahgunaan narkoba untuk pelajar kelas XI RPL.">
+
+    <title>Kontak | Stop Narkoba</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header dan Navigasi -->
+    <header>
+        <div class="nav">
+
+            <a class="brand" href="index.html">
+                <span class="logo">✚</span>
+                Stop Narkoba
+            </a>
+
+            <nav aria-label="Navigasi utama">
+                <a href="index.html">Beranda</a>
+                <a href="pengertian.html">Pengertian</a>
+                <a href="jenis-narkoba.html">Jenis</a>
+                <a href="dampak.html">Dampak</a>
+                <a href="pencegahan.html">Pencegahan</a>
+                <a href="bantuan.html">Bantuan</a>
+                <a href="artikel.html">Artikel</a>
+                <a href="faq.html">FAQ</a>
+                <a class="active" href="kontak.html">Kontak</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+
+        <section class="page-head">
+            <h1>Hubungi Kami</h1>
+
+            <p>
+                Kirim pertanyaan atau saran untuk pengembangan
+                materi edukasi.
+            </p>
+        </section>
+
+        <!-- Bagian Kontak -->
+        <section class="contact-grid">
+
+            <div class="content">
+                <h2>Mari saling peduli</h2>
+
+                <p>
+                    Website ini dibuat sebagai proyek pembelajaran RPL
+                    kelas XI untuk menyampaikan informasi edukatif tentang
+                    pencegahan penyalahgunaan narkoba.
+                </p>
+
+                <p class="small">
+                    Catatan: formulir demo ini belum terhubung ke database.
+                    Pesan hanya menampilkan konfirmasi di browser.
+                </p>
+
+                <div class="notice">
+                    Jaga privasi. Jangan tuliskan informasi kesehatan
+                    pribadi atau data sensitif pada formulir demo.
+                </div>
+            </div>
+
+            <!-- Formulir Kontak -->
+            <form class="content" id="contactForm" method="POST" action="mailto:karimbenzemazayan@gmail.com" enctype="text/plain">
+                <label for="nama">Nama</label>
+                <input id="nama" required placeholder="Nama kamu">
+
+                <label for="email">Email (opsional)</label>
+                <input id="email" type="email" placeholder="nama@email.com">
+
+                <label for="topik">Topik</label>
+                <select id="topik">
+                    <option>Pertanyaan materi</option>
+                    <option>Saran website</option>
+                    <option>Lainnya</option>
+                </select>
+
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" rows="4" required placeholder="Tulis pesan singkat..."></textarea>
+                <button type="submit">Kirim Pesan</button>
+
+                <p id="hasil" role="status"></p>
+
+            </form>
+
+        </section>
+
+        <!-- JavaScript Formulir -->
+        <script>
+            document
+                .getElementById('contactForm')
+                .addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    document.getElementById('hasil').textContent =
+                        'Terima kasih! Ini adalah demo formulir; pesan belum dikirim ke server.';
+
+                    this.reset();
+                });
+        </script>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            <b>Stop Narkoba — Edukasi untuk Masa Depan</b>
+        </p>
+
+        <p>
+            Proyek pembelajaran Rekayasa Perangkat Lunak (RPL) Kelas XI
+        </p>
+
+        <p>
+            Gunakan informasi dengan bijak • Materi edukasi,
+            bukan pengganti konsultasi medis
+        </p>
+
+    </footer>
+
+</body>
+</html>
